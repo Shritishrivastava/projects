@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    section{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       min-height: 100vh;
+       background-image: url(img1.jpg);
+       background-size: cover;
+       background-position: center; 
+      
+    }
+    .loginform{
+        position: relative;
+        width: 400px;
+        height: 450px;
+        background:transparent;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-color: #fff(255, 255, 255, 0.5);
+        
+    }
+    h2{
+        font-size: 1cm;
+        text-align: center;
+        color: antiquewhite;
+    }
+    .inputbox{
+        position: relative;
+        margin: 30px 0px;
+        width: 310px;
+        border-bottom: 1px solid #fff
+    }
+    .inputbox label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 1em;
+        pointer-events: none;
+        transition: .5s;
+        color:#fff;
+    }
+    input:focus ~ label,
+    input:focus ~ label{
+        top: -5px;
+        
+    }
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: azure;
+}
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.5em;
+    color: aliceblue;
+    top: 20px;
+}
+.rememberme{
+    font-size: 0.4cm;
+    margin: 15px 0 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.forgetpw{
+    font-size: 0.4cm;
+    margin: 15px 0 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.forgetpw label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+   background: white;
+   outline: none;
+   font-size: 1em;
+   cursor: pointer;
+   font-weight: 600;
+}
+.register{
+    font-size: 1em;
+    color: white;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff
+    font-weight: 600;
+}
+.register p a:hover{
+text-decoration: underline;
+}
+
+</style>
+
+<body>
+   
+    <section>
+        <div class="loginform">  
+    <form>
+     <h2> Login</h2>
+    
+    <div class="inputbox">
+        <ion-icon name="mail-outline"></ion-icon>
+        <input type="email" id="login">
+        <label for="">Email</label>
+        
+    </div>
+    <div class="inputbox">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <input type="password" id="login" >
+        <label for="">Password</label>
+        </div>
+        <div class="rememberme">
+<label for="rememberme">
+<input type="checkbox"> Remember me 
+</label>
+</div>
+<div class="forgetpw">
+<label for="password">
+    <a href="">Forget password</a>
+</label>
+</div>
+<ion-icon name="enter-outline"></ion-icon>
+   <button>Log in</button>
+   <div class="register">
+    <p>Don't have an account <a href=""> Register here</a></p>
+   </div>
+    </form>
+        </div>
+    </section>
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

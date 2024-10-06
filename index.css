@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color:whitesmoke ;
     background: linear-gradient(to right, #c2c2c2, #9db1f4);
     display: flex;
     align-items: center;
@@ -16,9 +16,9 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: #FCF6F5FF;
     border-radius: 150px;
-    box-shadow: 0 15px black;
+    box-shadow: 0 5px black;
     position: relative;
     overflow: hidden;
     width: 768px;
@@ -45,8 +45,8 @@ body {
 }
 
 .container button {
-    background-color: red;
-    color: white;
+    background-color: #d0dffa;
+    color: black;
     font-weight: 600;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -58,7 +58,7 @@ body {
 }
 
 form {
-    background-color: white;
+    background-color: #FCF6F5FF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,9 +142,9 @@ form {
 }
 
 .toggle {
-    background-color: red;
+    background-color: #89ABE3FF;
     height: 100%;
-    background: linear-gradient(to right, rgb(255, 175, 175), rgb(230, 130, 130));
+   /* background: linear-gradient(to right, rgb(160, 244, 247), rgb(152, 229, 243)); */
     color: #fff;
     position: relative;
     left: -100%;
@@ -154,6 +154,7 @@ form {
 }
 
 .toggle-panel {
+    
     position: absolute;
     width: 50%;
     height: 100%;
